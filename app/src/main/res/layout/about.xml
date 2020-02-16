@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:padding="4dip"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+    android:weightSum="1">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16dip"
+      android:text="Personal Med Care"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16sp"
+      android:text="Version 1.0"
+      android:textSize="16dip" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16dip"
+      android:textSize="20dip" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="8dip"
+      android:text="bsse0608@iit.du.ac.bd"
+      android:textSize="18sp"
+      android:layout_weight="0.11" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="309dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16sp"
+      android:text="This is an academic project for Software Project Lab 1 at Institute of Information Technology, University of Dhaka."
+      android:textSize="16sp"
+      android:layout_weight="0.08" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8sp">
+
+      <TextView
+          style="@style/widget"
+          android:layout_height="38dp"
+          android:text="@string/medicine_name"
+          android:textColor="@color/blue" />
+
+      <EditText
+          android:id="@+id/title"
+          style="@style/widget"
+          android:inputType=""
+          android:singleLine="true"
+          android:textColor="@color/black" />
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="8sp">
+
+        <CheckBox
+            android:id="@+id/alarm_checkbox"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alarm"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/occurence_spinner"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:entries="@array/occurence"
+            android:popupBackground="@color/black" />
+
+      </LinearLayout>
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="8sp">
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:onClick="onDateClick"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="onTimeClick"
+            tools:ignore="ButtonStyle" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+      style="@style/edit_button"
+      android:id="@+id/done"
+      android:text="@string/done"
+      android:onClick="onDoneClick" />
+
+    <Button
+      style="@style/edit_button"
+      android:id="@+id/cancel"
+      android:text="@string/cancel"
+      android:onClick="onCancelClick"
+        tools:ignore="ButtonOrder" />
+
+  </LinearLayout>
+
+</LinearLayout>
+
